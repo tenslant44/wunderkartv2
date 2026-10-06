@@ -1,0 +1,5 @@
+import { buildTrack } from "./js/track.js";
+const { TRACKS } = await import("./js/tracks.js?" + Date.now());
+for (const d of TRACKS) { try { const R = buildTrack({ ...d, fit: false }, null).gm; const raw = (()=>{ const dx=(d.start.x||0)-R.endX, dz=(d.start.z||0)-R.endZ; return "raw dx " + (-dx).toFixed(0) + " dz " + (-dz).toFixed(0); })(); const T = buildTrack(d, null); const g = T.gm; const S = T.S; let a = 0;
+ const ys = S.map(s => s.y); console.log(d.id.padEnd(12), "L", T.main.L.toFixed(0), "close", g.closeLen.toFixed(0), "endH", (((g.endH*180/Math.PI - (d.start.h||0)) % 360 + 540) % 360 - 180).toFixed(0), "y", Math.min(...ys).toFixed(0)+".."+Math.max(...ys).toFixed(0), "fl", (()=>{ const dx=(d.start.x||0)-g.endX, dz=(d.start.z||0)-g.endZ, h=g.endH; return (dx*Math.sin(h)+dz*Math.cos(h)).toFixed(0)+"/"+(dx*-Math.cos(h)+dz*Math.sin(h)).toFixed(0); })(), "bumps", T.bumps, "fit", T.def.segs.map((s,i)=>s.k==="S"&&Math.abs(s.len-d.segs[i].len)>1?i+":"+d.segs[i].len+">"+s.len.toFixed(0):"").filter(Boolean).join(" "), raw, "br", T.branches.map(b=>b.N).join(","));
+ } catch (e) { console.log(d.id, "FAIL", e.stack.split("\n").slice(0,3).join(" | ")); } }

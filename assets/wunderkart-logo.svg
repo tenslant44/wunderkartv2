@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 300" role="img" aria-labelledby="title desc">
+  <title id="title">WunderKart</title>
+  <desc id="desc">A bright red racing kart and checkered flag beside the WunderKart wordmark.</desc>
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff17a"/><stop offset="1" stop-color="#ffb900"/></linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ff5947"/><stop offset="1" stop-color="#d90024"/></linearGradient>
+  </defs>
+  <g transform="translate(18 22) rotate(-5 135 130)">
+    <path d="M20 217 44 235 190 231 236 207 220 222 196 250 51 257 30 241Z" fill="#111" opacity=".4"/>
+    <path d="m25 197 28-21 21-49 76-14 64 40 28 50-24 29-54 13-111-6-32-21Z" fill="url(#red)" stroke="#101426" stroke-width="11" stroke-linejoin="round"/>
+    <path d="m74 136 12-35 56-14 50 38-9 27-86 1Z" fill="#8be5ff" stroke="#101426" stroke-width="9" stroke-linejoin="round"/>
+    <path d="m105 130 17-25 30-6 27 23-4 16-66 2Z" fill="#d9f8ff"/>
+    <path d="m42 179 31-9 26 19-10 24-44-3-15-14Z" fill="url(#gold)" stroke="#101426" stroke-width="8" stroke-linejoin="round"/>
+    <path d="m177 182 33-12 20 21-11 22-42 9-17-15Z" fill="url(#gold)" stroke="#101426" stroke-width="8" stroke-linejoin="round"/>
+    <path d="m82 220 98 5" stroke="#fff" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="67" cy="230" r="27" fill="#181a24" stroke="#101426" stroke-width="8"/><circle cx="67" cy="230" r="10" fill="#dce6f2"/>
+    <circle cx="197" cy="226" r="27" fill="#181a24" stroke="#101426" stroke-width="8"/><circle cx="197" cy="226" r="10" fill="#dce6f2"/>
+    <path d="M183 79V23h48v13h-12v13h12v13h-12v13h-36Z" fill="#fff" stroke="#101426" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M195 30h12v12h-12zm12 24h12v12h-12zm12-24h12v12h-12z" fill="#101426"/>
+    <path d="M18 160H2m29-20H12m26-21H20" stroke="#ffdb37" stroke-width="9" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(284 33) skewX(-7)">
+    <text x="0" y="119" font-family="Arial Black,Arial,sans-serif" font-size="102" font-weight="1000" letter-spacing="-6" fill="url(#gold)" stroke="#101426" stroke-width="17" stroke-linejoin="round" paint-order="stroke">WUNDER</text>
+    <text x="12" y="234" font-family="Arial Black,Arial,sans-serif" font-size="104" font-weight="1000" letter-spacing="2" fill="url(#red)" stroke="#101426" stroke-width="18" stroke-linejoin="round" paint-order="stroke">KART</text>
+    <path d="M5 253h443" stroke="#101426" stroke-width="9" stroke-linecap="round"/>
+    <path d="M16 253h130" stroke="#111" stroke-width="9"/><path d="M146 253h130" stroke="#dd0000" stroke-width="9"/><path d="M276 253h130" stroke="#ffce00" stroke-width="9"/>
+  </g>
+</svg>
